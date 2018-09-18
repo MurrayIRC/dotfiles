@@ -11,6 +11,8 @@ Plug 'scrooloose/syntastic' " syntax errors
 Plug 'bling/vim-airline' " vim-airline status bar
 Plug 'vim-airline/vim-airline-themes' " vim-airline theming
 Plug 'majutsushi/tagbar' " tag bar code outliner
+Plug 'ctrlpvim/ctrlp.vim' " ctrl-p.vim (fuzzy finding mapped to ctrl-p)
+Plug 'Yggdroot/indentLine' " vim indentation lines
 
 " completion
 if has('nvim')
@@ -20,10 +22,6 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
-
-
-Plug 'ctrlpvim/ctrlp.vim' " ctrl-p.vim (fuzzy finding mapped to ctrl-p)
-Plug 'nathanaelkane/vim-indent-guides' " vim indentation guides
 
 call plug#end()
 
