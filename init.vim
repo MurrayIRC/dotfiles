@@ -33,6 +33,7 @@ syntax on
 set encoding=utf-8  " set the encoding (plugins rely on this)
 set termguicolors   " show colorschemes in all terminals/applications
 set number          " linenumbers
+set tabstop=4       " set tab distance to 4 (default 8?)
 
 " map keys
 map <C-n> :NERDTreeToggle<CR>
