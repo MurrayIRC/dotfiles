@@ -12,7 +12,6 @@ Plug 'bling/vim-airline' " vim-airline status bar
 Plug 'vim-airline/vim-airline-themes' " vim-airline theming
 Plug 'majutsushi/tagbar' " tag bar code outliner
 Plug 'ctrlpvim/ctrlp.vim' " ctrl-p.vim (fuzzy finding mapped to ctrl-p)
-Plug 'Yggdroot/indentLine' " vim indentation lines
 
 " completion
 if has('nvim')
@@ -53,7 +52,7 @@ let g:python3_host_prog='C:\Users\mcampbell\AppData\Local\Programs\Python\Python
 let g:deoplete#enable_at_startup=1
 
 let g:tagbar_ctags_bin='C:\Program Files\ctags\ctags.exe' " configure tagbar
-let g:indentLine_enabled = 1 " configure indent lines
+set list lcs=tab:\|\ " configure indent lines
 
 " configure syntastic
 set statusline+=%#warningmsg#
