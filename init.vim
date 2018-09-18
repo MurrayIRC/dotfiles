@@ -43,6 +43,15 @@ nnoremap <C-j> <C-w><C-j>
 nnoremap <C-k> <C-w><C-k>
 nnoremap <C-l> <C-w><C-l>
 
+" set the theme
+set background=dark
+let g:two_firewatch_italics=1
+colorscheme two-firewatch
+
+" Use deoplete.
+let g:python3_host_prog='C:\Users\mcampbell\AppData\Local\Programs\Python\Python37/python'
+let g:deoplete#enable_at_startup=1
+
 let g:tagbar_ctags_bin='C:\Program Files\ctags\ctags.exe' " configure tagbar
 let g:indent_guides_enable_on_vim_startup = 1 " configure indent guides
 
@@ -55,12 +64,15 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" set the theming
-set background=dark
-let g:two_firewatch_italics=1
-colorscheme two-firewatch
+" configure airline
+let g:airline#extensions#tabline#enabled = 2
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#right_sep = ' '
+let g:airline#extensions#tabline#right_alt_sep = '|'
+let g:airline_left_sep = ' '
+let g:airline_left_alt_sep = '|'
+let g:airline_right_sep = ' '
+let g:airline_right_alt_sep = '|'
 let g:airline_theme='twofirewatch'
-
-" Use deoplete.
-let g:python3_host_prog='C:\Users\mcampbell\AppData\Local\Programs\Python\Python37/python'
-let g:deoplete#enable_at_startup=1
