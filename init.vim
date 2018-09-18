@@ -53,7 +53,7 @@ let g:python3_host_prog='C:\Users\mcampbell\AppData\Local\Programs\Python\Python
 let g:deoplete#enable_at_startup=1
 
 let g:tagbar_ctags_bin='C:\Program Files\ctags\ctags.exe' " configure tagbar
-let g:indent_guides_enable_on_vim_startup = 1 " configure indent guides
+let g:indentLine_enabled = 1 " configure indent lines
 
 " configure syntastic
 set statusline+=%#warningmsg#
