@@ -12,7 +12,6 @@ Plug 'bling/vim-airline' " vim-airline status bar
 Plug 'vim-airline/vim-airline-themes' " vim-airline theming
 Plug 'majutsushi/tagbar' " tag bar code outliner
 Plug 'ctrlpvim/ctrlp.vim' " ctrl-p.vim (fuzzy finding mapped to ctrl-p)
-Plug 'tpope/endwise.vim' " bracket closing plugin hahah
 
 " completion
 if has('nvim')
@@ -35,14 +34,26 @@ set encoding=utf-8  " set the encoding (plugins rely on this)
 set termguicolors   " show colorschemes in all terminals/applications
 set number          " linenumbers
 set tabstop=4       " set tab distance to 4 (default 8?)
+set shiftwidth=0    " not sure what this does
 
-" map keys
+" map plugins
 map <C-n> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
+
+" map buffer switching
 nnoremap <C-h> <C-w><C-h>
 nnoremap <C-j> <C-w><C-j>
 nnoremap <C-k> <C-w><C-k>
 nnoremap <C-l> <C-w><C-l>
+
+" map auto-complete delimiters
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
 
 " set the theme
 set background=dark
@@ -54,7 +65,10 @@ let g:python3_host_prog='C:\Users\mcampbell\AppData\Local\Programs\Python\Python
 let g:deoplete#enable_at_startup=1
 
 let g:tagbar_ctags_bin='C:\Program Files\ctags\ctags.exe' " configure tagbar
-set list lcs=tab:\|\ " configure indent lines
+
+" configure indentLines
+set listchars=tab:\|\ 
+set list
 
 " configure syntastic
 set statusline+=%#warningmsg#
