@@ -12,6 +12,7 @@ Plug 'bling/vim-airline' " vim-airline status bar
 Plug 'vim-airline/vim-airline-themes' " vim-airline theming
 Plug 'majutsushi/tagbar' " tag bar code outliner
 Plug 'ctrlpvim/ctrlp.vim' " ctrl-p.vim (fuzzy finding mapped to ctrl-p)
+Plug 'tpope/endwise.vim' " bracket closing plugin hahah
 
 " completion
 if has('nvim')
